@@ -65,7 +65,9 @@ namespace FinalProject
         static void TambahData()
         {
             Console.Clear();
-            Console.WriteLine("Tambah Data Karyawan\n");
+            Console.WriteLine("=================================================");
+            Console.WriteLine("\tTambah Data Karyawan");
+            Console.WriteLine("=================================================\n");
             Console.Write("Jenis Karyawan[1. PNS, 2. Guru, 3. Guru Honorer] : ");
             int pil = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -77,10 +79,10 @@ namespace FinalProject
                     pns.NIP = Console.ReadLine();
                     Console.Write("Nama : ");
                     pns.Nama = Console.ReadLine();
-                    Console.Write("Gaji Bulanan : ");
-                    pns.Bulanan = Convert.ToDouble(Console.ReadLine());
-                    Console.Write("Gaji Per Tahun : ");
-                    pns.GajiPerTahun = Convert.ToDouble(Console.ReadLine());
+                    Console.Write("Gaji Pokok : ");
+                    pns.GajiPokok = Convert.ToDouble(Console.ReadLine());
+                    Console.Write("Tunjangan : ");
+                    pns.Tunjangan = Convert.ToDouble(Console.ReadLine());
                     listKaryawan.Add(pns);
                     break;
                 case 2:
@@ -116,7 +118,9 @@ namespace FinalProject
             Console.Clear();
 
             int nomor = -1, hapus = -1;
-            Console.Write("Hapus Data\n");
+            Console.WriteLine("=================================================");
+            Console.WriteLine("\tHapus Data");
+            Console.WriteLine("=================================================\n");
             Console.Write("NIP : ");
             string code = Console.ReadLine();
             foreach (Karyawan karyawan in listKaryawan)
@@ -149,7 +153,9 @@ namespace FinalProject
 
             int noUrut = 0;
             string jenis = " ";
-            Console.WriteLine("Data Karyawan\n");
+            Console.WriteLine("=================================================");
+            Console.WriteLine("\tData Karyawan");
+            Console.WriteLine("=================================================\n");
             foreach (Karyawan karyawan in listKaryawan)
             {
                 if (karyawan is PNS)

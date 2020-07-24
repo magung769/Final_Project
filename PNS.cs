@@ -8,11 +8,11 @@ namespace FinalProject
 {
     public class PNS : Karyawan
     {
-        public double GajiPerTahun { get; set; }
-        public double Bulanan { get; set; }
+        public double GajiPokok { get; set; }
+        public double Tunjangan { get; set; }
         public override double Gaji()
         {
-            return GajiPerTahun * Bulanan;
+            return GajiPokok + Tunjangan;
         }
     }
 }
