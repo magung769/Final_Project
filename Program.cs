@@ -52,7 +52,7 @@ namespace FinalProject
         {
             Console.Clear();
             Console.WriteLine("=================================================");
-            Console.WriteLine("\tSistem Penghitungan Karyawan");
+            Console.WriteLine("\tSistem Penghitungan Gaji Karyawan");
             Console.WriteLine("=================================================\n");
             Console.WriteLine("Pilih Menu Aplikasi");
             Console.WriteLine();
