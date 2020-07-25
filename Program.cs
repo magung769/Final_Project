@@ -56,9 +56,9 @@ namespace FinalProject
             Console.WriteLine("=================================================\n");
             Console.WriteLine("Pilih Menu Aplikasi");
             Console.WriteLine();
-            Console.WriteLine("1. Tambah Produk");
-            Console.WriteLine("2. Hapus Produk");
-            Console.WriteLine("3. Tampilkan Produk");
+            Console.WriteLine("1. Tambah Data");
+            Console.WriteLine("2. Hapus Data");
+            Console.WriteLine("3. Tampilkan Data");
             Console.WriteLine("4. Keluar");
         }
 
